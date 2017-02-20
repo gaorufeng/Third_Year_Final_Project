@@ -9,3 +9,5 @@ available on  [Wiki](https://github.com/andryuha77/Third_Year_Final_Project/wiki
 
 Projects organization and prioritization done using GitHub [Projects](https://github.com/andryuha77/Third_Year_Final_Project/projects/1).
 
+Demonstration account used for testing, opened in [Alpari ](http://alpari.ru/?partner_id=81675)
+
