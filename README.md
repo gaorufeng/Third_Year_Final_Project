@@ -13,3 +13,5 @@ Demonstration account used for testing, opened in [Alpari ](http://alpari.com/?p
 
 Account number: 29589598, investor password: Andryuha77, Server: Alpari-Pro.ECN-Demo
 
+Independent Monitoring of the Account on [Myfxbook](https://www.myfxbook.com/members/andryuha77/project/2044922)
+
