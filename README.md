@@ -11,5 +11,5 @@ Projects organization and prioritization done using GitHub [Projects](https://gi
 
 Demonstration account used for testing, opened in [Alpari ](http://alpari.com/?partner_id=81675)
 
-Account number:29589598, investor password:Andryuha77, Server: Alpari-Pro.ECN-Demo
+Account number: 29589598, investor password: Andryuha77, Server: Alpari-Pro.ECN-Demo
 
