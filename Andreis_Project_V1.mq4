@@ -525,6 +525,7 @@ double LotSizeCounting(int OpTime)
         }
      }
    else Lots=Lot;
+   // Increase lot size in one of the week days
    if(DayOfWeek()==doubleLot){Lots=Lots*2;}
 
    return(Lots);
