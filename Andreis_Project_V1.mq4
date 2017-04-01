@@ -133,13 +133,14 @@ int deinit()
 //|  main function                                                   |
 //+------------------------------------------------------------------+  
 void start()
-// check if right time frame selected (1H)
   {
-//use traling stops for any open positions
+//activates trailing  stop if TrailingStop set bigger then 0
+//use trailing stops for any open positions
    if(TrailingStop>0)
      {
       TrailingStop();
      }
+// check if right time frame selected (1H)     
 //Period() Returns the current chart timeframe.
    if(Period()!=60 || Bars==bars)// Bars Number of bars in the current chart
       return;
