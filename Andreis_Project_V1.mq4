@@ -240,8 +240,10 @@ void Opening(int n)
      {
       for(trysToOpen=1;trysToOpen<=maxTry;trysToOpen++)
         {
+        //Checks if the Expert Advisor is allowed to trade and trading context is not busy
          while(!IsTradeAllowed())
             Sleep(5000);
+         //Refreshing of data in pre-defined variables and series arrays   
          RefreshRates();
          position=OrderSend(Symbol(),OP_BUY,Lots,NormalizeDouble(Ask,5),3,
                             NormalizeDouble(Ask-hardStop*Point,5),2,"buy",magicN[n],Blue);
@@ -250,7 +252,8 @@ void Opening(int n)
          if(position>0)
            {
             tradeDay[n]=Day();
-            Pause=1000;break;
+            Pause=1000;
+            break;
            }
          else
            {
