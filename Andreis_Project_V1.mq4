@@ -300,7 +300,10 @@ void Opening(int n)
         }
      }
   }
-// closing by stops
+
+//+------------------------------------------------------------------+
+//|  closing by stops  function                                      |
+//+------------------------------------------------------------------+
 void UseStops(int n)
   {
 //OrdersTotal() Returns the number of market and pending orders.
@@ -313,6 +316,7 @@ void UseStops(int n)
       if(OrderMagicNumber()!=magicN[n] || OrderSymbol()!=Symbol())
          continue;
       //OrderType() Returns order operation type of the currently selected order
+      //closing buy positions if exist, Close[1]-close price of previous bar
       if((OrderType()==OP_BUY) && (((Close[1]-NormalizeDouble(OrderOpenPrice(),5))>=profit[n]*Point)
          || ((NormalizeDouble(OrderOpenPrice(),5)-Close[1])>=loss[n]*Point)))
         {
@@ -347,7 +351,7 @@ void UseStops(int n)
               }
            }//closing for 
         }
-
+       //closing sell positions if exist
       if((OrderType()==OP_SELL) && (((Close[1]-NormalizeDouble(OrderOpenPrice(),5))>=loss[n]*Point)
          || ((NormalizeDouble(OrderOpenPrice(),5)-Close[1])>=profit[n]*Point)))
 
@@ -464,7 +468,7 @@ void Closetime(int n)
      }
   }
 //+------------------------------------------------------------------+
-//|                                                                  |
+//|   Trailing Stop                                                  |
 //+------------------------------------------------------------------+
 int  TrailingStop()
   {//adapted from:  
