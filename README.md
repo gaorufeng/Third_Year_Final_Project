@@ -4,7 +4,7 @@
 The Project Supervisor is Martin Kenirons.
 
 #### Automatic trading program (Expert Advisor (EA)) for the FOREX (foreign exchange) market.
-All documentation including: Design Document, Implementation, User Guide and (Video)[https://www.youtube.com/watch?v=6rmJK-VOCd8&feature=youtu.be] for presentation,
+All documentation including: Design Document, Implementation, User Guide and [Video](https://www.youtube.com/watch?v=6rmJK-VOCd8&feature=youtu.be) for presentation,
 available on  [Wiki](https://github.com/andryuha77/Third_Year_Final_Project/wiki).
 
 Projects organization and prioritization done using GitHub [Projects](https://github.com/andryuha77/Third_Year_Final_Project/projects/1).
